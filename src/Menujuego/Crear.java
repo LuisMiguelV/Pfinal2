@@ -13,15 +13,11 @@ import javax.swing.JOptionPane;
  * @author Luis Miguel
  */
 public class Crear extends javax.swing.JFrame {
-public  String longitud;
-String mostrar="",mostra="",tr="S",Nombre;
-int j,Tama;  
-Random ran=new Random();
+    int longitud;
     public Crear() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
-
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -176,50 +172,21 @@ Random ran=new Random();
     }//GEN-LAST:event_RegresarmenuActionPerformed
 
     private void MostrarcadenaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MostrarcadenaActionPerformed
-     
-     
-     
-     longitud=Texto.getText();
-    
-     
+     longitud = Texto.getText().length();
      JOptionPane.showMessageDialog(null, "Se ha guardado exitosamente");
-        
-     
-      Mostrar2.setText(longitud);  
+     Mostrar2.setText(Texto.getText());  
     }//GEN-LAST:event_MostrarcadenaActionPerformed
 
     private void verActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verActionPerformed
-     
- 
-      Tama=longitud.length();
-//        int vecadena[]=new int[Tama];
-//        
-//        for(j=0;j<Tama;j++)
-//        {
-//            vecadena[j]=ran.nextInt(Tama)+1;
-//        }
-//       
-//        for(j=0;j<Tama;j++)
-//        {
-//            mostrar=mostrar + vecadena[j];
-//            mostrar=mostrar+"||";
-//        }
-//     
-//     mostrar ver= new mostrar();
-//     
-//       
-//        
-//        
-//     ver.longitud=Texto.getText();
-//     
-//     ver.setVisible(true);
-//     this.dispose();
-     
-     
+        var ver = new Mostrar(longitud);
+        ver.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_verActionPerformed
 
     private void OrdenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrdenarActionPerformed
-        
+        var ver = new Ordenar(longitud);
+        ver.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_OrdenarActionPerformed
 
     

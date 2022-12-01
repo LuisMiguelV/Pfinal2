@@ -26,9 +26,9 @@ public class Menu extends javax.swing.JFrame {
     public Menu() {
         initComponents();
          this.setLocationRelativeTo(null);// esto es para que se quede en el centro de la pantalla
-         SetImageLabel(Imagen3,"C:\\Users\\Luis Miguel\\OneDrive\\Documentos\\NetBeansProjects\\Exafinal\\src\\Images\\Mario2.png");
-         SetImageLabel(Imagen2,"C:\\Users\\Luis Miguel\\OneDrive\\Documentos\\NetBeansProjects\\Exafinal\\src\\Images\\Mario3.png");
-         SetImageLabel(Imagen1,"C:\\Users\\Luis Miguel\\OneDrive\\Documentos\\NetBeansProjects\\Exafinal\\src\\Images\\Mario1.png");
+         SetImageLabel(Imagen3,"src/Images/Mario2.png");
+         SetImageLabel(Imagen2,"src/Images/Mario3.png");
+         SetImageLabel(Imagen1,"src/Images/Mario1.png");
     }
 
     

@@ -41,7 +41,7 @@ public class Juego extends javax.swing.JFrame {
         initComponents();
         
         this.setLocationRelativeTo(null);// esto es para que se quede en el centro de la pantalla
-       SetImageLabel(Mariobros,"C:\\Users\\Luis Miguel\\OneDrive\\Documentos\\NetBeansProjects\\Intento2\\src\\image\\foto mariobros.png");
+       SetImageLabel(Mariobros,"src/Images/Mario4.png");
         LB [0] = jLabel1;
         LB [1] = jLabel2;
         LB [2] = jLabel3;

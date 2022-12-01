@@ -5,6 +5,9 @@
  */
 package Menujuego;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 /**
  *
  * @author Luis Miguel
@@ -16,7 +19,13 @@ public class Ordenar extends javax.swing.JFrame {
      */
     public Ordenar() {
         initComponents();
+    }
+    public Ordenar(int longitud) {
+        initComponents();
         this.setLocationRelativeTo(null);
+        
+        var orderedNumbers = IntStream.range(1, longitud).toArray();
+        jLabel1.setText(Arrays.toString(orderedNumbers).replace("[", "").replace("]", ""));
     }
 
     /**
@@ -28,17 +37,27 @@ public class Ordenar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(101, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(89, 89, 89))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(jLabel1)
+                .addContainerGap(240, Short.MAX_VALUE))
         );
 
         pack();
@@ -80,5 +99,6 @@ public class Ordenar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
