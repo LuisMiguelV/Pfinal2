@@ -22,7 +22,7 @@ public class Ejemplo extends javax.swing.JFrame {
     public Ejemplo() {
         initComponents();
         this.setLocationRelativeTo(null);
-        SetImageLabel(Imagen4,"C:\\Users\\Luis Miguel\\OneDrive\\Documentos\\NetBeansProjects\\Exafinal\\src\\Images\\Mario4.png");
+        SetImageLabel(Imagen4,"src/Images/Mario4.png");
     }
 
     /**
