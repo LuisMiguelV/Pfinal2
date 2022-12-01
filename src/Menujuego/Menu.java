@@ -28,6 +28,7 @@ public class Menu extends javax.swing.JFrame {
          this.setLocationRelativeTo(null);// esto es para que se quede en el centro de la pantalla
          SetImageLabel(Imagen3,"src/Images/Mario2.png");
          SetImageLabel(Imagen2,"src/Images/Mario3.png");
+         SetImageLabel(Imagen4,"src/Images/Mario3.png");
          SetImageLabel(Imagen1,"src/Images/Mario1.png");
     }
 
@@ -40,6 +41,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         Nombremenu = new javax.swing.JLabel();
         Imagen2 = new javax.swing.JLabel();
+        Imagen4 = new javax.swing.JLabel();
         Imagen1 = new javax.swing.JLabel();
         Elegirop = new javax.swing.JLabel();
         Creararreglo = new javax.swing.JButton();
@@ -63,7 +65,9 @@ public class Menu extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(205, 205, 205)
+                .addGap(56, 56, 56)
+                .addComponent(Imagen4, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(54, 54, 54)
                 .addComponent(Nombremenu, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
                 .addComponent(Imagen2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -78,6 +82,9 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(Imagen2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 11, Short.MAX_VALUE)
+                .addComponent(Imagen4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         Fondomenu.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 80));
@@ -213,6 +220,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel Imagen1;
     private javax.swing.JLabel Imagen2;
     private javax.swing.JLabel Imagen3;
+    private javax.swing.JLabel Imagen4;
     private javax.swing.JButton Mostrarjuego;
     private javax.swing.JLabel Nombremenu;
     private javax.swing.JPanel jPanel1;

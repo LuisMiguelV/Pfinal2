@@ -60,7 +60,9 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="205" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="Imagen4" min="-2" pref="95" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                       <Component id="Nombremenu" min="-2" pref="202" max="-2" attributes="0"/>
                       <EmptySpace pref="64" max="32767" attributes="0"/>
                       <Component id="Imagen2" min="-2" pref="95" max="-2" attributes="0"/>
@@ -75,9 +77,13 @@
                       <Component id="Nombremenu" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <Component id="Imagen2" min="-2" pref="79" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="11" max="32767" attributes="0"/>
+                      <Component id="Imagen4" min="-2" pref="79" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -93,6 +99,8 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Imagen2">
+            </Component>
+            <Component class="javax.swing.JLabel" name="Imagen4">
             </Component>
           </SubComponents>
         </Container>
